@@ -1,5 +1,35 @@
 ---
-title: "TV-Show-Analysis"
+title: "TV Show Viewership Analysis"
+author: "Guanhong Chen"
 output: html_document
 ---
 
+# **Introduction**
+**TV Show**: *Game of Thrones*
+
+*Game of Thrones* is a fantasy drama television series based on the book series *A Song of Ice and Fire* by George R. R. Martin. It premiered in 2011 and concluded in 2019, with a total of 8 seasons.
+
+![Game of Thrones Logo](images/Game_of_Thrones_title_card.jpg)
+
+# **Viewership Summary**
+The following table summarizes the viewership data for *Game of Thrones* across its seasons.
+
+```{r}
+# Viewership data (in millions)
+seasons <- c(1, 2, 3, 4, 5, 6, 7)
+viewership <- c(9.3, 11.6, 14.2, 18.6, 25.0, 25.0, 32.8)
+
+data <- data.frame(seasons, viewership)
+data
+library(ggplot2)
+
+ggplot(data, aes(x=seasons, y=viewership)) +
+  geom_line() +
+  geom_point() +
+  labs(title="Viewership of Game of Thrones Over Time",
+       x="Season",
+       y="Viewership (in millions)") +
+  theme_minimal()
+data$viewership_change <- c(NA, diff(data$viewership))  # Calculate the season-to-season change
+data
+```

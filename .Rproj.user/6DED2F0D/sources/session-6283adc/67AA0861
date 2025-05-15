@@ -3,24 +3,24 @@
     "path": "C:/Users/Razer/Desktop/TV-Show-Analysis/TV-Show-Analysis.Rmd",
     "project_path": "TV-Show-Analysis.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "1287994806",
     "contents": "",
     "dirty": false,
     "created": 1747325051136.0,
-    "source_on_save": false,
+    "source_on_save": true,
     "relative_order": 1,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "5,0",
-        "scrollLine": "0"
+        "cursorPosition": "34,3",
+        "scrollLine": "29"
     },
     "folds": "",
-    "lastKnownWriteTime": 1747325050,
+    "lastKnownWriteTime": 1747326721,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1747325050,
+    "last_content_update": 1747326721287,
     "read_only": false,
     "read_only_alternatives": []
 }
